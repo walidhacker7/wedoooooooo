@@ -67,7 +67,7 @@
 <body>
 
 <div class="overlay">
-    <div class="title">🎮 GameHub Marketplace</div>
+    <div class="title">🎮 Gammeing store </div>
     <div class="description">
         Charge games, buy & sell accounts for PUBG, PES, FIFA, Steam, Google Cards, and more!
     </div>
