@@ -1,20 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>GameHub - Home</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome Icons -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+    <title>Gamming Store - الصفحة الرئيسية</title>
     
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet">
+
     <style>
         body {
             margin: 0;
             padding: 0;
-            font-family: 'Orbitron', sans-serif;
+            font-family: 'Cairo', sans-serif;
             background: url('https://wallpaperaccess.com/full/184293.jpg') no-repeat center center fixed;
             background-size: cover;
             color: white;
@@ -33,18 +36,18 @@
         }
 
         .title {
-            font-size: 3.5rem;
+            font-size: 3rem;
             margin-bottom: 20px;
         }
 
         .description {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             margin-bottom: 40px;
         }
 
         .btn-custom {
             padding: 15px 30px;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             margin: 10px;
             border-radius: 50px;
         }
@@ -67,9 +70,9 @@
 <body>
 
 <div class="overlay">
-    <div class="title">🎮 Gammeing store </div>
+    <div class="title">🎮 متجر Gamming Store</div>
     <div class="description">
-        قم بشحن الألعاب، وشراء وبيع الحسابات لـ PUBG، وPES، وFIFA، وSteam، وGoogle Cards، والمزيد!
+        اشحن ألعابك، واشترِ وبيع حسابات PUBG، PES، FIFA، بطاقات Steam، Google Play والمزيد!
     </div>
     
     <div class="icon-section">
@@ -80,13 +83,13 @@
     </div>
 
     <div>
-        <a href="login.php" class="btn btn-warning btn-custom"><i class="fas fa-sign-in-alt"></i> Login</a>
-        <a href="register.php" class="btn btn-outline-light btn-custom"><i class="fas fa-user-plus"></i> Create Account</a>
+        <a href="login.php" class="btn btn-warning btn-custom"><i class="fas fa-sign-in-alt"></i> تسجيل الدخول</a>
+        <a href="register.php" class="btn btn-outline-light btn-custom"><i class="fas fa-user-plus"></i> إنشاء حساب جديد</a>
     </div>
 </div>
 
 <footer>
-    &copy; <?php echo date("Y"); ?> GameHub. All rights reserved.
+    &copy; <?php echo date("Y"); ?> جميع الحقوق محفوظة لمتجر Gamming Store
 </footer>
 
 </body>
