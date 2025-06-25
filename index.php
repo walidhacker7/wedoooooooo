@@ -69,7 +69,7 @@
 <div class="overlay">
     <div class="title">🎮 Gammeing store </div>
     <div class="description">
-        Charge games, buy & sell accounts for PUBG, PES, FIFA, Steam, Google Cards, and more!
+        قم بشحن الألعاب، وشراء وبيع الحسابات لـ PUBG، وPES، وFIFA، وSteam، وGoogle Cards، والمزيد!
     </div>
     
     <div class="icon-section">
