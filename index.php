@@ -1,6 +1,5 @@
 <?php
-// كود PHP في الأعلى للتعامل مع الوقت أو الجلسات مثلاً
-session_start();
+// ملف PHP رئيسي
 $pageTitle = "Gamming Store - الصفحة الرئيسية";
 $year = date("Y");
 ?>
@@ -21,39 +20,44 @@ $year = date("Y");
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet">
 
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             margin: 0;
             padding: 0;
             font-family: 'Cairo', sans-serif;
-            background: url('https://wallpaperaccess.com/full/184293.jpg') no-repeat center center fixed;
-            background-size: cover;
-            color: white;
-        }
-
-        .overlay {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(15px);
-            -webkit-backdrop-filter: blur(15px);
-            border-radius: 20px;
-            padding: 40px;
-            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-            height: auto;
-            margin: 50px;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #1f1f1f, #3a3a3a);
             display: flex;
             align-items: center;
             justify-content: center;
-            flex-direction: column;
+            color: white;
+        }
+
+        .glass-container {
+            background: rgba(255, 255, 255, 0.07);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            padding: 50px 30px;
+            max-width: 700px;
+            width: 90%;
             text-align: center;
         }
 
         .title {
             font-size: 3rem;
             margin-bottom: 20px;
+            color: #ffffff;
         }
 
         .description {
             font-size: 1.2rem;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
+            color: #e0e0e0;
         }
 
         .btn-custom {
@@ -63,34 +67,31 @@ $year = date("Y");
             border-radius: 50px;
             background: rgba(255, 255, 255, 0.1);
             color: #fff;
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.3);
-            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
-            transition: all 0.3s ease-in-out;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
         }
 
         .btn-custom:hover {
             background: rgba(255, 255, 255, 0.3);
             color: #000;
-            box-shadow: 0 8px 20px rgba(255, 255, 255, 0.4);
+            box-shadow: 0 8px 25px rgba(255, 255, 255, 0.4);
         }
 
         .icon-section i {
             font-size: 2.5rem;
-            margin: 20px;
+            margin: 15px;
             color: #f1c40f;
         }
 
         footer {
-            position: absolute;
-            bottom: 10px;
-            width: 100%;
-            text-align: center;
+            margin-top: 40px;
             color: #ccc;
+            font-size: 0.9rem;
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 600px) {
             .title {
                 font-size: 2rem;
             }
@@ -108,7 +109,7 @@ $year = date("Y");
 </head>
 <body>
 
-<div class="overlay">
+<div class="glass-container">
     <div class="title">🎮 متجر Gamming Store</div>
     <div class="description">
         اشحن ألعابك، واشترِ وبيع حسابات PUBG، PES، FIFA، بطاقات Steam، Google Play والمزيد!
@@ -125,11 +126,11 @@ $year = date("Y");
         <a href="login.php" class="btn btn-custom"><i class="fas fa-sign-in-alt"></i> تسجيل الدخول</a>
         <a href="register.php" class="btn btn-custom"><i class="fas fa-user-plus"></i> إنشاء حساب جديد</a>
     </div>
-</div>
 
-<footer>
-    &copy; <?php echo $year; ?> جميع الحقوق محفوظة لمتجر Gamming Store
-</footer>
+    <footer>
+        &copy; <?php echo $year; ?> جميع الحقوق محفوظة لمتجر Gamming Store
+    </footer>
+</div>
 
 </body>
 </html>
