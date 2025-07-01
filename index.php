@@ -1,5 +1,4 @@
 <?php
-// ملف PHP رئيسي
 $pageTitle = "Gamming Store - الصفحة الرئيسية";
 $year = date("Y");
 ?>
@@ -28,8 +27,9 @@ $year = date("Y");
             margin: 0;
             padding: 0;
             font-family: 'Cairo', sans-serif;
+            background: url('https://wallpaperaccess.com/full/184293.jpg') no-repeat center center fixed;
+            background-size: cover;
             min-height: 100vh;
-            background: linear-gradient(135deg, #1f1f1f, #3a3a3a);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -37,7 +37,7 @@ $year = date("Y");
         }
 
         .glass-container {
-            background: rgba(255, 255, 255, 0.07);
+            background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
             border-radius: 20px;
